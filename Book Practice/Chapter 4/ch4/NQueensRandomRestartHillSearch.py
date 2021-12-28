@@ -33,11 +33,7 @@ class NQueensRandomRestartHillSearch(NQueensSearchAgent):
         
         # self.graph_data()
     
-    def search(self) -> Tuple[int, int, bool]:
-        #Values to see if move has improved standing
-        # print(self.search_instance.queen_positions)
-        # print(len(set([queen[0] for queen in self.queen_positions.values()])))
-        
+    def search(self) -> Tuple[int, int, bool]:   
         current_collisions, current_different_rows = self.search_instance.get_number_of_colliding_queens(), self.search_instance.get_number_of_different_rows()
         
         #Current positions

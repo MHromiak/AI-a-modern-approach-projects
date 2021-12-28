@@ -53,4 +53,8 @@ def test_visualize_board_manually():
     nqp.visualize_board()
     assert True #TODO: Turn to false if you want to visually check
 
+def test_board_size():
+    nqp = NQP(8)
+    assert len(nqp.board) == 8
+
 
